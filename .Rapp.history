@@ -1,0 +1,1069 @@
+y = exp(x)
+plot(x,y)
+ymin = 1/y
+plot(x, ymin)
+y
+y = exp(x)
+y
+x
+plot(x,y)
+y
+exp(1)
+exp(2)
+exp(3)
+exp(4)
+1/exp(1)
+1/exp(2)
+1/exp(3)
+1/exp(4)
+-exp(1)
+exp(-1)
+44/100
+0.44*5
+6 + 5.5 + 5.5 + 5 + 5.5 + 4.5 + 5 + 5.5 + 5 + 5.5 + 5.5 + 5 + 6
+2*(5.5 + 5.5 + 5 + 5.5 + 4.5 + 5 + 5.5 + 5 + 5.5 + 5.5 + 5 + 6)
+127+6
+length(c(5.5 + 5.5 + 5 + 5.5 + 4.5 + 5 + 5.5 + 5 + 5.5 + 5.5 + 5 + 6))
+length(c(5.5, 5.5, 5, 5.5, 4.5, 5, 5.5, 5, 5.5, 5.5, 5, 6))
+133/25
+69.5/13
+300000000/78815
+300000000/100000
+t <- 1:50
+Nzero <- 1
+lambda <- 1.5
+N <- Nzero * exp(-lambda*t)
+t
+N
+plot(t,N)
+lambda <- 1.2
+N <- Nzero * exp(-lambda*t)
+plot(t,N)
+lambda <- 1.1
+N <- Nzero * exp(-lambda*t)
+plot(t,N)
+lambda <- 1.05
+N <- Nzero * exp(-lambda*t)
+plot(t,N)
+lambda <- 1.005
+N <- Nzero * exp(-lambda*t)
+plot(t,N)
+lambda
+N
+lambda <- 1.00005
+N <- Nzero * exp(-lambda*t)
+plot(t,N)
+N
+lambda <- 0.8
+N <- Nzero * exp(-lambda*t)
+plot(t,N)
+Ninv <- 1 - N
+plot(t,Ninv)
+lambda <- 0.3
+N <- Nzero * exp(-lambda*t)
+plot(t,N)
+Ninv <- 1 - N
+plot(t,Ninv)
+x <- -10:10#
+#
+a <- 0#
+#
+b <- 1
+y <- 1 / (1+ exp(-(a + b * x)))
+plot(x,y)
+plot(x,y, lines)
+?lines
+plot(x,y, type = "l")
+a <- 1
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")
+plot(x,y, type = "l")#
+#
+abline(v = a)
+plot(x,y, type = "l")#
+#
+abline(v = -a)
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))
+plot(x,y, type = "l")#
+#
+abline(v = -a)
+x <- c(1,3,4,7,8,9,10)#
+#
+y <- c(0,0,0,0,1,1,1)#
+#
+plot(x,y)
+?plot
+?pch
+plot(x,y, pch = 21)
+plot(x,y, pch = 20)
+plot(x,y, pch = 21)
+plot(x,y, pch = 16)
+plot(x,y, pch = 16, col = "red")
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)
+plot(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+plot(xL,yL, pch = 16, col = "blue")
+plot(xL,yL, pch = n, col = "blue")
+x <- c(1,3,4,7,8,9,10)
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)
+plot(x,y, pch = n)
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+plot(x,y, pch = n)#
+axis(1, at = 1:10, labels = 1:10)
+plot(x,y, pch = n)#
+axis(1, at = 1:10, labels = 1:10)#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1))
+plot(x,y, pch = n)#
+axis(1, at = 1:10, labels = 1:10)#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1))#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+x <- -10:10#
+#
+a <- 7.5#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")#
+#
+abline(v = -a)
+x <- -10:10#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")#
+#
+abline(v = -a)
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)
+plot(x,y, pch = n)#
+axis(1, at = 1:10, labels = 1:10)#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1))#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+ylog <- 1 / (1+ exp(-(a + b * x)))
+ylog
+x
+xlog <- 1:10#
+#
+ylog <- 1 / (1+ exp(-(a + b * x)))
+ylog
+plot(x,y, pch = n)#
+axis(1, at = 1:10, labels = 1:10)#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1))#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+lines(x, ylog)
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- 1:10#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))
+plot(x,y, pch = n)#
+axis(1, at = 1:10, labels = 1:10)#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1))#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+lines(x, ylog)
+lines(xlog, ylog)
+abline(v = -a)
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))
+plot(x,y, pch = n)#
+axis(1, at = 1:10, labels = 1:10)#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1))#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+lines(xlog, ylog)#
+#
+abline(v = -a)
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+plot(x,y, pch = n, xlab = "Tumor size", ylab = "Benign/Lethal")#
+axis(1, at = 1:10, labels = 1:10)#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1))#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+plot(x,y, pch = n, xlab = "Tumor size", ylab = "Benign/Lethal")
+plot(x,y, pch = n)#
+axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), , ylab = "Benign/Lethal")
+plot(x,y, pch = n)
+plot(x,y, type=n)
+plot(x,y, type=n)#
+axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), , ylab = "Benign/Lethal")
+plot(x,y, type=n, xlab = "Tumor size")
+plot(x,y, type=n)
+plot(x,y, type= "n")
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)
+x <- -10:10#
+#
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")#
+#
+abline(v = -a)
+x <- seq(-10,10,0.5)#
+#
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")#
+#
+abline(v = -a)
+?type
+x <- seq(-10,10,0.5)#
+#
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")#
+#
+abline(h = 0.5, lty = "3")#
+#
+abline(v = -a)
+x <- seq(-10,10,0.5)#
+#
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")#
+#
+abline(h = rep(0.5, length(x)), lty = "3")#
+#
+abline(v = -a)
+?abline
+x <- seq(-10,10,0.5)#
+#
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")
+abline(h = 0.5, lty = "3")
+abline(h = 0.5, lty = "4")
+abline(h = 0.5)
+plot(x,y, type = "l")#
+#
+abline(h = 0.5, lty = 2)
+x <- seq(-10,10,0.5)#
+#
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")#
+#
+abline(h = 0.5, lty = 2)#
+#
+abline(v = -a, col = "red")
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 12, col = "blue")#
+points(xD,yD, pch = 12, col = "red")
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 16, col = "blue")#
+points(xD,yD, pch = 16, col = "red")
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue")#
+points(xD,yD, pch = 19, col = "red")
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue")#
+points(xD,yD, pch = 19, col = "red")
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex = 3)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 3)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 1.5)
+par(cex = 0.8)#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 1.5)
+par(cex = 0.6)#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 1.5)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 1.5)
+?par
+par(cex = 1.2)#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 1.5)
+points(xL,yL, pch = 19, col = "blue")#
+points(xD,yD, pch = 19, col = "red")
+par(mar = c(5.5, 4.5, 4.5, 2.5), cex = 1.2)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 1.5)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(5.5, 4.5, 4.5, 2.5), cex = 1.2)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(5.5, 4.5, 4.5, 2.5), cex.lab = 1.2)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(5.5, 4.5, 4.5, 2.5), cex.lab = 1.6)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(5.5, 4.5, 4.5, 2.5), cex.lab = 1.3)
+points(xL,yL, pch = 19, col = "blue")#
+points(xD,yD, pch = 19, col = "red")
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(5.5, 4.5, 4.5, 2.5), cex.lab = 1.3)
+points(xL,yL, pch = 19, col = "blue", cex =2)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(6, 5, 5, 3), cex.lab = 1.3)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(6, 6, 5, 3), cex.lab = 1.3)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(6, 7, 5, 3), cex.lab = 1.3)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(6, 10, 5, 3), cex.lab = 1.3)
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", mar = c(6, 20, 5, 3), cex.lab = 1.3)
+par(mar = c(5.5, 5, 4.5, 2.5), cex = 1.2)#
+points(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")
+par(mar = c(5.5, 5, 4.5, 2.5), cex = 1.2)
+points(xL,yL, pch = 19, col = "blue", cex =2)#
+points(xD,yD, pch = 19, col = "red")
+par(mar = c(5.5, 5, 4.5, 2.5), cex = 1.2)#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")
+par(mar = c(5.5, 5, 4, 2), cex = 1.2)#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal")
+points(xL,yL, pch = 19, col = "blue", cex =2)#
+points(xD,yD, pch = 19, col = "red")
+par(mar = c(5.5, 5, 4, 2))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 1.3)
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)
+par(mar = c(5.5, 5, 4, 3))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Benign/Lethal", cex.lab = 1.3)
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)
+par(mar = c(5.5, 5, 4, 4))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)
+legend(8, 0.9, c("non-lethal", "lethal"), text.col = c("blue", "red"), pch = 19)
+par(mar = c(5.5, 5, 4, 4))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+legend(8, 0.9, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19)
+par(mar = c(5.5, 5, 4, 4))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+legend(8, 0.9, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)
+par(mar = c(5.5, 5, 4, 4))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)
+x <- seq(-10,10,0.5)#
+#
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+#
+plot(x,y, type = "l")#
+#
+abline(h = 0.5, lty = 2)#
+#
+abline(v = -a, col = "red")
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type = "l", cex.lab = 1.5)
+abline(h = 0.5, lty = 2)#
+#
+abline(v = -a, col = "red")
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 3#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 1.5#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 1.2#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 0.8#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- 0#
+#
+b <- 3#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- 0#
+#
+b <- 10#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- 0#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- 0#
+#
+b <- 5#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- 0#
+#
+b <- 40#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- 0#
+#
+b <- 0.6#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- 0#
+#
+b <- 0.4#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- 0#
+#
+b <- 0.3#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 1.3#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+x <- seq(-10,10,0.5)#
+#
+a <- 0#
+#
+b <- 1#
+#
+y <- 1 / (1+ exp(-(a + b * x)))#
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type = "l", cex.lab = 1.5)#
+#
+abline(h = 0.5, lty = 2)#
+#
+abline(v = -a, col = "red")
+x <- c(1,3,4,7,8,9,10)#
+y <- c(0,0,0,0,1,1,1)#
+#
+xL <- c(1,3,4,7)#
+#
+xD <- c(8,9,10)#
+#
+yL <- c(0,0,0,0)#
+#
+yD <- c(1,1,1)
+par(mar = c(5.5, 5, 4, 5))#
+plot(x,y, type= "n", xlab = "Tumor size", ylab = "Severity", cex.lab = 1.5)#
+#axis(1, at = 1:10, labels = 1:10, xlab = "Tumor size")#
+#axis(2, at = seq(0,1,0.1), labels = seq(0,1,0.1), ylab = "Benign/Lethal")#
+#
+points(xL,yL, pch = 19, col = "blue", cex = 1.5)#
+points(xD,yD, pch = 19, col = "red", cex = 1.5)#
+#legend(8, 0.5, c("non-lethal", "lethal"), col = c("blue", "red"), text.col = c("blue", "red"), pch = 19, cex = 1.5)#
+#
+a <- -7.5#
+#
+b <- 1#
+#
+xlog <- seq(1,10,0.5)#
+#
+ylog <- 1 / (1+ exp(-(a + b * xlog)))#
+#
+lines(xlog, ylog)#
+#
+abline(v = -a)#
+abline(h = 0.5, lty = 2)
+setwd("/Documents/Coursera_DataScience/ReproducibleResearch/RepData_PeerAssessment1")
+library(knitr)
+knit2html("PA1_template.Rmd")
+library(rmarkdown)#
+render("PA1_template.Rmd")
+library(rmarkdown)#
+render("PA1_template.Rmd")
+library(xtable)
+xt2 <- xtable(head(ActivityDataImputed$WE_Not))
+xt2 <- xtable(head(ActivityDataImputed))
+print(xt2, type = "html")
+library(rmarkdown)#
+render("PA1_template.Rmd")
+?xtable
+render("PA1_template.Rmd")
+head(ActivityData)
+dim(ActivityData)
+head(is.na(ActivityData$steps))
+sum(is.na(ActivityData$steps))
+render("PA1_template.Rmd")
+p <- ggplot(data = AverageStepsInterval_WE_not, aes(x = interval, y = average_steps)) + geom_line()#
+p + facet_wrap(~days)
+render("PA1_template.Rmd")
+render("PA1_template.Rmd")
+head(ActivityData)
+dim(ActivityData[ActivityData$date == "2012-10-01",])
+ActivityData[288:289,]
+dim(ActivityData[is.na(ActivityData$steps),])
+2304/288
+render("PA1_template.Rmd")
+MissingData <- ActivityData[is.na(ActivityData$steps),3]
+head(MissingData)
+MissingData <- ActivityData[is.na(ActivityData$steps),2]
+head(MissingData)
+unique(head(MissingData))
+length(MissingData)
+unique(MissingData)
+sum(MissingData == unique(MissingData)[1])
+MissingDataDates <- ActivityData[is.na(ActivityData$steps),2]
+MissingIntervalsPerDay <- rep(0,8)
+for(i in 1: length(unique(MissingDataDates))){#
+	MissingIntervalsPerDay[i] <- sum(MissingData == unique(MissingData)[i])#
+}
+MissingIntervalsPerDay
+render("PA1_template.Rmd")

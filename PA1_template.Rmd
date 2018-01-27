@@ -22,6 +22,22 @@ Then load the data:
 ```{r}
 ActivityData <- read.csv("/Documents/Coursera_DataScience/ReproducibleResearch/RepData_PeerAssessment1/activity.csv")
 ```
+Add interval labels that are more intuitive (to use for plots): 
+```{r}
+
+minute <- 0
+for(i in 1:length(ActivityData$interval)){
+	if(minute == 1440){
+		minute <- 0
+		ActivityData$interval_minutes[i] <- minute
+		minute <- minute +5 
+		}
+	else {
+		ActivityData$interval_minutes[i] <- minute
+	minute <- minute +5
+	}
+}
+```
 
 For the first questions missing values can be ignored. So, we select the complete cases from the data set: 
 ```{r}
@@ -31,7 +47,7 @@ ActivityComplete <- ActivityData[complete.cases(ActivityData$steps),]
 
 ## What is mean total number of steps taken per day?
 
-First the 'agregate' function is used to sum up the total number of steps for each day. Then the for each day the mean and the median value are calculated: 
+First the 'agregate' function is used to sum up the total number of steps for each day. Then the mean and the median value are calculated: 
 ```{r}
 TotalStepsDay <- aggregate(x = ActivityComplete$steps, by = list(ActivityComplete$date), sum)
 
@@ -40,7 +56,7 @@ mean(TotalStepsDay$x)
 median(TotalStepsDay$x)
 ```
 
-A histogram can give a rough impression on how many steps the individual tipically takes per day: 
+A histogram can give a rough impression on how many steps the individual typically takes per day: 
 ```{r Histogram_1, ig.path = "/Documents/Coursera_DataScience/ReproducibleResearch/RepData_PeerAssessment1/figures/Histogram_1"}
 hist(TotalStepsDay$x, ylab = "frequency", xlab = "number of steps per day")
 ```
@@ -48,14 +64,15 @@ hist(TotalStepsDay$x, ylab = "frequency", xlab = "number of steps per day")
 
 ## What is the average daily activity pattern?
 
-Taking the mean value for every five minute interval accross all days allows to identify a tipical daily pattern of physical activity for the individual in question:
+Taking the mean value for every five minute interval accross all days allows to identify a typical daily pattern of physical activity for the individual in question:
 ```{r}
 AverageStepsInterval <- aggregate(x = ActivityComplete$steps, by = list(ActivityComplete$interval), mean)
 ```
 
 A plot of the daily activity pattern can be obtained: 
 ```{r Daily_Activity_Pattern, ig.path = "/Documents/Coursera_DataScience/ReproducibleResearch/RepData_PeerAssessment1/figures/Daily_Activity_Pattern"}
-plot(AverageStepsInterval$Group.1, AverageStepsInterval$x, type = "l", ylab = "average number of steps per interval", xlab = "5 minute intervals of one day")
+AverageStepsInterval$interval_minutes <- unique(ActivityData$interval_minutes)
+plot(AverageStepsInterval$interval_minutes, AverageStepsInterval$x, type = "l", ylab = "average number of steps per interval", xlab = "5 minute intervals of one day")
 ```
 
 The five minute interval with the maximum number of steps is obtained by the following code: 
@@ -116,12 +133,12 @@ The overall mean value is constituted by the mean values of the individual 5 min
 ```{r}
 dim(ActivityData[is.na(ActivityData$steps),])
 ```
-2304 is a multiple of 288. So, it seems that the missing values are entirely made up of entire days without measurements. The following operations shows that indeed for each day where data are missing all 288 interval measurements are missing. 
+2304 is a multiple of 288. So, it seems that the missing values are entirely made up of entire days without measurements. The following operations shows that indeed for each day where data are missing all 288 interval measurements are missing:
 ```{r}
 MissingDataDates <- ActivityData[is.na(ActivityData$steps),2]
-MissingIntervalsPerDay <- rep(0,8)
+MissingIntervalsPerDay <- rep(0,length(unique(MissingDataDates)))
 for(i in 1: length(unique(MissingDataDates))){
-	MissingIntervalsPerDay[i] <- sum(MissingData == unique(MissingData)[i])
+	MissingIntervalsPerDay[i] <- sum(MissingDataDates == unique(MissingDataDates)[i])
 }
 MissingIntervalsPerDay
 ```
@@ -165,11 +182,20 @@ AverageStepsInterval_WE_not$days <- factor(AverageStepsInterval_WE_not$days, lev
 
 head(AverageStepsInterval_WE_not)
 ```
-
+Also add the intuitive interval labels again: 
+```{r}
+AverageStepsInterval_WE_not$interval_minutes <- c(unique(ActivityData$interval_minutes), unique(ActivityData$interval_minutes))
+head(AverageStepsInterval_WE_not)
+tail(AverageStepsInterval_WE_not)
+```
+Make sure that the new interval labels are of class 'integer' (this seems to be necessary to use them for the ggplot graph): 
+```{r}
+AverageStepsInterval_WE_not$interval_minutes <- as.integer(AverageStepsInterval_WE_not$interval_minutes)
+```
 Finally a plot visualizes the different activity patterns on weekdays and weekends by plotting the average number of steps per interval for each category of day (weekday and weekend): 
 ```{r Activity_Patterns_Weekend_vs_Week, ig.path = "/Documents/Coursera_DataScience/ReproducibleResearch/RepData_PeerAssessment1/figures/Activity_Patterns_Weekend_vs_Week"}
 require(ggplot2)
 
-p <- ggplot(data = AverageStepsInterval_WE_not, aes(x = interval, y = average_steps)) + geom_line()
+p <- ggplot(data = AverageStepsInterval_WE_not, aes(x = interval_minutes, y = average_steps)) + geom_line()
 p + facet_wrap(~days)
 ```
